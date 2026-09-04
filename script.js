@@ -1,5 +1,5 @@
 // create an array of sounds
-const sounds = ['applause', 'boo', 'gasp', 'tada', 'victory', 'wrong'];
+const sounds = ['APPLAUSE', 'BOO', 'GASP', 'TADA', 'VICTORY', 'WRONG'];
 
 // for each sound in the array, create a button and append it to DOM
 sounds.forEach((sound) => {
@@ -12,7 +12,7 @@ sounds.forEach((sound) => {
 
     // Set the button label text to the same as the sound name
     btn.innerText = sound;
-    
+
     //Add an event listener to the button that plays the sound when clicked
     btn.addEventListener('click', () => {
         stopSounds();
@@ -30,3 +30,4 @@ function stopSounds() {
         snd.pause();
         snd.currentTime = 0;
     });
+}
